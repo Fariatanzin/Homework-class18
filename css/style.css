@@ -1,0 +1,359 @@
+/* Common Css Start */
+:root{
+    --primary-font:'Poppins', sans-serif;
+    --secondary-font:'PT Sans', sans-serif;
+    --primary-color:#353535;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+input, .form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+/* Common Css End */
+/* Nav Section Start */
+#primary-nav #menu ul li a{
+    font-size: 15px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform:uppercase;
+    color:var(--primary-color);
+    line-height: 30px;
+    position: relative;
+    padding:5px 28px;
+}
+#primary-nav #menu ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color:var(--primary-color);
+    transition: .5s;
+}
+#primary-nav #menu ul li a:hover:after{
+    width: 100%;
+    right: 0;
+}
+/* Nav Section End */
+/* Hero Section Start */
+#hero .hero-info h6{
+    color:var(--primary-color);
+   font-family: var(--primary-font);
+   font-size: 24px;
+  font-weight: 400;
+ 
+}
+#hero .hero-info h1{
+    color:var(--primary-color);
+   font-family:var(--secondary-font);
+   font-size: 64px;
+   font-weight: 700;
+  
+}
+#hero .hero-info p{
+    color:var(--primary-color);
+   font-family: Poppins;
+   font-size: 20px;
+  font-weight: 400;
+  line-height: 180%; 
+ 
+}
+#hero .hero_img{
+    transform: translateX(100px);
+}
+#hero .hero-info .text{
+    color:var(--primary-color);
+   font-family:var(--primary-font);
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 180%; 
+   border-radius: 20px;
+   border: 1px solid #000;
+   padding:13.5px 25px;
+   display: inline-block;
+   transition: all linear .5s;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   margin:0 10px;
+  
+}
+#hero .hero-info .text:hover{
+    color:#fff;
+    background-color: #ffd153;
+    border: none;
+   
+
+}
+#hero .hero-info ul li{
+    color:var(--primary-color);
+    font-family:var(--primary-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+}
+#hero .hero-info ul li a{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background: none;
+    color: black;
+
+}
+#hero .hero-info ul li a:hover{
+    
+    transition: 0.4sec;
+    background-color:#fefefe;
+}
+/* Hero Section End */
+
+/* About Section Start */
+#about{
+    margin:50px 0;
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+
+#about .about-info h1{
+    color:var(--primary-color);
+   font-family:var(--secondary-font);
+   font-size: 50px;
+   font-weight: 700;
+   margin-top: 70px;
+}
+#about .about-info{
+    position: relative;
+}
+#about .about-info p{
+    color:var(--primary-color);
+    font-family:var(--primary-font);
+    font-size: 20px;
+   font-weight: 400;
+   line-height: 190%;
+   margin-top: 70px;
+
+}
+#about .about-info a{
+    color:var(--primary-color);
+    font-family: Poppins;
+    font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 180%;
+   padding: 14px 50px;
+   display: inline-block;
+   transition: all linear .5s;
+   margin-top: 80px;
+}
+#about .about-info a:hover{
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+#about .about-info img{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+/* About Section End */
+
+/* Box Section Start */
+
+#cards{
+    margin:70px 0;
+}
+#cards .about_card{
+    text-align: center;
+    padding: 36px 0;
+    margin-bottom: 40px;
+    border-radius: 20px;
+   background: #FFF;
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+
+}
+#cards .about_card h4{
+    color:var(--primary-color);
+   text-align: center;
+  font-family:var(--primary-font);
+   font-size: 22px;
+  font-weight: 600;
+  line-height: 180%; 
+}
+#cards .about_card p{
+    color: #7A7A7A;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  padding:5px 20px;
+  font-weight: 400;
+  line-height: 190%;
+}
+/*  Box Section End  */
+
+/* Branding part start  */
+#brand{
+    margin:50px 0;
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+   
+}
+
+#brand .brand-info{
+    padding: 50px 0;
+    position: relative;
+    
+}
+#brand .brand-img img{
+    transform: translateY(90px);
+}
+#brand .brand-info h1{
+    color:var(--primary-color);
+   font-family:var(--secondary-font);
+   font-size: 50px;
+   font-weight: 700;
+   margin-top: 80px;
+}
+#brand .brand-info{
+    position: relative;
+}
+#brand .brand-info p{
+    color:var(--primary-color);
+    font-family:var(--primary-font);
+    font-size: 20px;
+   font-weight: 400;
+   line-height: 190%;
+   margin-top: 70px;
+
+}
+#brand .brand-info a{
+    color:var(--primary-color);
+    font-family: Poppins;
+    font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 180%;
+   padding: 14px 50px;
+   display: inline-block;
+   transition: all linear .5s;
+   margin-top: 60px;
+}
+#brand .brand-info a:hover{
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+#brand .brand-info img{
+    position: absolute;
+    top:-30px;
+    right: 0;
+}
+#brand .brand-info .img2{
+    position: absolute;
+    bottom:-50px;
+    right: 0;
+}
+/* Branding part end */
+/* Help Part Start */
+#help {
+    padding: 90px 0;
+}
+#help .help-boxes{
+    padding: 15px 0;
+}
+#help ul  .green li i{
+    width: 58px;
+    height: 58px;
+    background-color: #55852F;
+    line-height: 58px;
+    border-radius:50%;
+    text-align: center;
+    margin-left: 10px;
+}
+#help ul  .yellow li i{
+    width: 58px;
+    height: 58px;
+    background-color:#FEDC2A;
+    line-height: 58px;
+    border-radius:50%;
+    text-align: center;
+    margin-left: 10px;
+}
+#help ul  .orange li i{
+    width: 58px;
+    height: 58px;
+    background-color:#FF8D3A;
+    line-height: 58px;
+    border-radius:50%;
+    text-align: center;
+    margin-left: 10px;
+}
+#help .help-box{
+   
+    border-radius: 20px;
+   background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 20px 40px;
+    margin: 24px 0;
+}
+#help .help-box h5{
+    color: var(--primary-color);
+font-family:var(--primary-font);
+font-size: 18px;
+font-weight: 600;
+line-height: 180%;
+padding-left: 18px;
+}
+#help .help-box small{
+    color:var(--primary-color);
+   font-family:var(--primary-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 180%;
+}
+#help .help-info h2{
+    color:var(--primary-color);
+text-align: right;
+font-family:var(--secondary-font);
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+#help .help-info p{
+    color:var(--primary-color);
+text-align: right;
+font-family:var(--primary-font);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 190%; 
+}
+#help .help-info .help h5{
+    color: #353535;
+    text-align: right;
+    font-family: PT Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+#help .help-info .help p{
+    color: #353535;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%;
+}
+#help .help-info .help{
+    padding: 15px 20px;
+}
+/* Help Part End */
